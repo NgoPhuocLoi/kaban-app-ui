@@ -60,7 +60,7 @@ const Register = () => {
       navigate('/');
     } catch (error: any) {
       const errors = error.data.errors;
-      console.log({ errors });
+
       errors.forEach((err: any) => {
         setErrorText((prev) => ({ ...prev, [err.param]: err.msg }));
       });

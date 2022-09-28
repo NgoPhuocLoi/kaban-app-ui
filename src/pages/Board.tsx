@@ -32,7 +32,6 @@ const SingleBoard = () => {
   );
 
   useEffect(() => {
-    // console.log(context);
     const getBoard = async () => {
       try {
         const res = await boardApi.getOne(boardId!);

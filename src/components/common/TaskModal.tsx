@@ -43,7 +43,6 @@ const timeout = 500;
 const TaskModal = (props: Props) => {
   const [task, setTask] = useState<Task>();
   const ref = useRef<HTMLDivElement>(null);
-  console.log(ref.current?.clientWidth);
 
   useEffect(() => {
     setTask(props.task);
